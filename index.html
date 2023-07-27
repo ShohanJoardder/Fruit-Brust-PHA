@@ -35,33 +35,37 @@
 </head>
 <body class="font-openSans">
     <header class="container mx-auto">
-      <nav class="mt-12">
-        <div class="navbar bg-none md:bg-[#F85559] lg:bg-[#F85559] px-2 py-2 md:px-10 md:py-4 lg:px-10 lg:py-4 rounded-full">
+
+      <nav class="mt-12 bg-none md:bg-[#F85559] lg:bg-[#F85559] px-2 py-2 md:px-10 md:py-4 lg:px-15 lg:py-4 rounded-full">
+        <div class="container mx-auto flex items-center justify-between">
       
           <!-- Nav Start -->
-          <div class="navbar-start">
-            <div class="navbar hidden md:flex lg:flex">
-              <ul class="menu menu-horizontal px-1 text-white font-medium text-base">
-                <li><a>Home</a></li>
-                <li><a>About Us</a></li>
-                <li><a>Shop</a></li>
-                <li><a>All Fruits</a></li>
-              </ul>
-            </div>
+          <div class="flex items-center space-x-4">
+            <ul class="hidden md:flex space-x-4 text-white font-medium text-base">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Shop</a></li>
+              <li><a href="#">All Fruits</a></li>
+            </ul>
           </div>
       
           <!-- Nav Center -->
-          <div class="navbar-center">
-            <div class="flex gap-2 items-center">
-              <img src="images/logo.png" alt="">
-              <h2 class="text-[#121212] md:text-white lg:text-white text-2xl md:text-2xl lg:text-3xl font-bold">Fruit Burst</h2>
-            </div>
+          <div class="flex items-center flex-grow justify-center gap-3">
+            <img src="images/logo.png" alt="Logo" class="h-8 md:h-10" />
+            <h2 class="text-[#121212] md:text-white lg:text-white text-2xl md:text-2xl lg:text-3xl font-bold">Fruit Burst</h2>
           </div>
       
-          <!-- Nav bar end -->
-          <div class="navbar-end flex items-center">
-            <!-- Small Device's Dropdown (Hidden on Medium and Large Devices) -->
-            <div class="dropdown md:hidden lg:hidden">
+          <!-- Nav End -->
+          <div class="flex items-center space-x-4">
+            <div class="hidden md:block relative">
+              <input type="text" placeholder="Search here" class="px-4 py-4 rounded-full text-gray-900 placeholder-gray-500 focus:outline-none  " />
+              <button class="absolute right-6 top-4">
+                <i class="fa-solid fa-magnifying-glass text-[#121212]"></i>
+              </button>
+            </div>
+
+            <!-- Mobile Hamburger Menu -->
+            <div class="dropdown dropdown-end md:hidden">
               <label tabindex="0" class="btn btn-ghost">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
@@ -74,19 +78,25 @@
                 <li><a>All Fruits</a></li>
               </ul>
             </div>
+
+            
+            
+
+         
       
-            <!-- Search Bar (Hidden on Small Devices) -->
-            <div class="form-control hidden md:flex lg:flex relative mr-5">
-              <input type="text" placeholder="Search here" class="input rounded-full w-24 md:w-auto" />
-            </div>
       
-            <!-- Search Button (Hidden on Small Devices) -->
-            <button class="hidden md:flex lg:flex absolute mr-10">
-              <i class="fa-solid fa-magnifying-glass"></i>
-            </button>
+            <!--  -->
           </div>
+      
+          
+      
         </div>
-      </nav>     
+      </nav>
+      
+
+
+      
+      
 
         <!-- Banner Section -->
         <banner class="">
