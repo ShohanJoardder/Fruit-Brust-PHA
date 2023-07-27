@@ -35,35 +35,59 @@
 </head>
 <body class="font-openSans">
     <header class="container mx-auto">
-        <nav class="mt-12">
-          <div class="navbar bg-[#F85559] rounded-full">
-            <div class="flex-1">
-              <a class="btn btn-ghost normal-case text-xl">daisyUI</a>
-            </div>
-            <div class="flex-none gap-2">
-              <div class="form-control">
-                <input type="text" placeholder="Search" class="input input-bordered w-24 md:w-auto" />
-              </div>
-              <div class="dropdown dropdown-end">
-                <label tabindex="0" class="btn btn-ghost btn-circle avatar">
-                  <div class="w-10 rounded-full">
-                    <img src="/images/stock/photo-1534528741775-53994a69daeb.jpg" />
-                  </div>
-                </label>
-                <ul tabindex="0" class="mt-3 z-[1] p-2 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52">
-                  <li>
-                    <a class="justify-between">
-                      Profile
-                      <span class="badge">New</span>
-                    </a>
-                  </li>
-                  <li><a>Settings</a></li>
-                  <li><a>Logout</a></li>
-                </ul>
-              </div>
+      <nav class="mt-12">
+        <div class="navbar bg-none md:bg-[#F85559] lg:bg-[#F85559] px-2 py-2 md:px-10 md:py-4 lg:px-10 lg:py-4 rounded-full">
+      
+          <!-- Nav Start -->
+          <div class="navbar-start">
+            <div class="navbar hidden md:flex lg:flex">
+              <ul class="menu menu-horizontal px-1 text-white font-medium text-base">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
           </div>
-        </nav>
+      
+          <!-- Nav Center -->
+          <div class="navbar-center">
+            <div class="flex gap-2 items-center">
+              <img src="images/logo.png" alt="">
+              <h2 class="text-[#121212] md:text-white lg:text-white text-2xl md:text-2xl lg:text-3xl font-bold">Fruit Burst</h2>
+            </div>
+          </div>
+      
+          <!-- Nav bar end -->
+          <div class="navbar-end flex items-center">
+            <!-- Small Device's Dropdown (Hidden on Medium and Large Devices) -->
+            <div class="dropdown md:hidden lg:hidden">
+              <label tabindex="0" class="btn btn-ghost">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
+            </div>
+      
+            <!-- Search Bar (Hidden on Small Devices) -->
+            <div class="form-control hidden md:flex lg:flex relative mr-5">
+              <input type="text" placeholder="Search here" class="input rounded-full w-24 md:w-auto" />
+            </div>
+      
+            <!-- Search Button (Hidden on Small Devices) -->
+            <button class="hidden md:flex lg:flex absolute mr-10">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </div>
+        </div>
+      </nav>     
+
         <!-- Banner Section -->
         <banner class="">
           <div class="carousel w-full mt-14 -z-10">
@@ -73,9 +97,9 @@
                 <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
-                    <h1 class="mb-3 md:mb-4 lg:mb-6 text-2xl md:text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
-                    <p class="mb-4 md:mb-5 lg:mb-6 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
-                    <button class="btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
+                    <h1 class="mb-3 md:mb-3 lg:mb-5 text-2xl md:text-3xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-4 md:mb-3 lg:mb-4 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                    <button class="mb-12 lg:mb-14 btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
                   </div>
                 </div>
               </div>
@@ -91,9 +115,9 @@
                 <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
-                    <h1 class="mb-3 md:mb-4 lg:mb-6 text-2xl md:text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
-                    <p class="mb-4 md:mb-5 lg:mb-6 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
-                    <button class="btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
+                    <h1 class="mb-3 md:mb-3 lg:mb-5 text-2xl md:text-3xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-4 md:mb-3 lg:mb-4 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                    <button class="mb-12 lg:mb-14 btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
                   </div>
                 </div>
               </div>
@@ -109,9 +133,9 @@
                 <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
-                    <h1 class="mb-3 md:mb-4 lg:mb-6 text-2xl md:text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
-                    <p class="mb-4 md:mb-5 lg:mb-6 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
-                    <button class="btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
+                    <h1 class="mb-3 md:mb-3 lg:mb-5 text-2xl md:text-3xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-4 md:mb-3 lg:mb-4 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                    <button class="mb-12 lg:mb-14 btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
                   </div>
                 </div>
               </div>
@@ -127,9 +151,9 @@
                 <div class="hero-overlay bg-opacity-60 rounded-lg"></div>
                 <div class="hero-content text-center text-neutral-content">
                   <div class="">
-                    <h1 class="mb-3 md:mb-4 lg:mb-6 text-2xl md:text-4xl lg:text-7xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
-                    <p class="mb-4 md:mb-5 lg:mb-6 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
-                    <button class="btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
+                    <h1 class="mb-3 md:mb-3 lg:mb-5 text-2xl md:text-3xl lg:text-6xl font-extrabold text-white">Exotic tastes at your <br> doorstep</h1>
+                    <p class="mb-4 md:mb-3 lg:mb-4 text-base md:text-lg lg:text-xl font-medium text-white">We supply highly quality organic products</p>
+                    <button class="mb-12 lg:mb-14 btn btn-primary text-xl font-extrabold bg-[#F85559] border-0 hover:bg-[#F85559] text-white capitalize">Shop Now</button>
                   </div>
                 </div>
               </div>
@@ -179,7 +203,7 @@
       <section class="my-36">
         <div class="grid grid-cols-1 md:grid md:grid-cols-1 lg:flex lg:justify-between gap-6">
           <div class="p-5 md:p-5 lg:p-0 text-center md:text-center lg:text-start">
-            <h2 class="text-xl lg:text-5xl font-extrabold text-[#121212] mb-6">Deal of the day</h2>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-[#121212] mb-6">Deal of the day</h2>
             <p class="font-medium text-[#121212cc]">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
           </div>
           <div class="flex justify-between gap-4 lg:gap-8 px-1 md:px-16 lg:px-0">
@@ -594,12 +618,12 @@
       <!-- About Us -->
       <section class="mb-36">
         <div class="text-center">
-          <h2 class="text-5xl font-extrabold mb-6">Why Choose Us</h2>
+          <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6">Why Choose Us</h2>
           <p class="font-medium text-[#121212cc] mb-12">Contrary to popular belief, is not simply random text. It has roots in a piece of classical <br> Latin literature from 45 BC, making it over 2000 years old.</p>
         </div>
 
         <!-- About-container -->
-        <div class="flex justify-between"> 
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10 "> 
           <!-- first part -->
           <div>
             <div class="flex gap-4">
@@ -623,6 +647,8 @@
                 <p class="font-medium text-[#121212cc]">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
             </div>
+
+            
             <!--  -->
             <div class="flex gap-4 mt-10">
               <div>
@@ -637,7 +663,7 @@
           </div>
 
           <!-- section part -->
-          <div>
+          <div class="order-first md:order-first lg:-order-none ">
             <img src="images/whychoose1.png" alt="">
           </div>
 
@@ -649,7 +675,7 @@
                 <div class="w-[100px] h-px bg-[#121212cc] mb-4 ml-auto"></div>
                 <p class="font-medium text-[#121212cc]">Professional employees are there for you to pick <br> the most amazing and fresh fruits.</p>
               </div>
-              <div>
+              <div >
                 <img class="border-8 border-[#e7e7e7] rounded-full mt-8" src="images/icon-4.svg" alt="">
               </div>
             </div>
@@ -677,6 +703,13 @@
             </div>
           </div>
 
+          <!--Only for medium device -->
+          <div>
+            <div class="hidden sm:block lg:hidden ">
+              <img src="images/whychoose1.png" alt="">
+            </div>  
+          </div>
+
         </div>
 
       </section>
@@ -688,7 +721,7 @@
         <h3 class="text-[40px] font-bold">Fruit Burst</h3>
       </div>
       <div>
-        <ul class="flex gap-14 font-medium">
+        <ul class="flex flex-wrap justify-center gap-8 md:gap-10 lg:gap-14 font-medium ">
           <li>Home</li>
           <li>About Us</li>
           <li>Shop</li>
@@ -698,7 +731,7 @@
         </ul>
       </div> 
       <div>
-        <div class="grid grid-flow-col gap-10 mb-36 text-4xl">
+        <div class="grid grid-flow-col gap-5 md:gap-8 lg:gap-10 mb-36 text-2xl md:text-4xl lg:text-4xl">
           <a><i class="fa-brands fa-twitter"></i></a>
           <a><i class="fa-brands fa-facebook"></i></a> 
           <a><i class="fa-brands fa-youtube"></i></a>
